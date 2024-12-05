@@ -1,1 +1,163 @@
+/* Police de caractères */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Réinitialisation des marges et paddings de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général du corps */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa; /* Couleur de fond légère */
+    color: #333; /* Couleur de texte principale */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Couleur de base pour les titres */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50; /* Titre sombre pour contraste */
+}
+
+/* Style du header (entête) */
+header {
+    background-color: #2980b9; /* Bleu professionnel */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Style du menu de navigation */
+nav {
+    background-color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #3498db; /* Bleu clair au survol */
+}
+
+/* Contenu principal */
+main {
+    background-color: #fff; /* Fond blanc pour une meilleure lisibilité */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Cartes pour les sections */
+.card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #2980b9; /* Titre des cartes en bleu */
+}
+
+.card p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+/* Boutons */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Liens */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulaire */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Footer (pied de page) */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
 
