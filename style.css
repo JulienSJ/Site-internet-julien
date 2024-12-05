@@ -1,4 +1,4 @@
-/* Police de caractères */
+/* Importation de la police Roboto depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /* Réinitialisation des marges et paddings de base */
@@ -11,153 +11,177 @@
 /* Style général du corps */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f7fa; /* Couleur de fond légère */
-    color: #333; /* Couleur de texte principale */
+    background-color: #f4f7fa; /* Fond clair pour une interface propre */
+    color: #333; /* Texte sombre */
     line-height: 1.6;
-    padding: 20px;
+    padding: 0 20px;
+    min-height: 100vh; /* S'assure que la page occupe toute la hauteur de l'écran */
 }
 
-/* Couleur de base pour les titres */
-h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50; /* Titre sombre pour contraste */
-}
-
-/* Style du header (entête) */
+/* Style du header */
 header {
-    background-color: #2980b9; /* Bleu professionnel */
-    color: #fff;
-    padding: 15px 0;
+    background-color: #2980b9; /* Bleu foncé */
+    color: white;
     text-align: center;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour profondeur */
+    position: relative;
+    z-index: 1000;
 }
 
-/* Style du menu de navigation */
-nav {
-    background-color: #ecf0f1;
-    text-align: center;
-    padding: 10px 0;
+header h1 {
+    font-size: 3rem; /* Taille du titre */
+    margin-bottom: 10px;
 }
 
-nav a {
-    color: #2c3e50;
-    text-decoration: none;
-    font-size: 18px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
-nav a:hover {
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
     color: #3498db; /* Bleu clair au survol */
+    transition: color 0.3s ease; /* Effet de transition au survol */
 }
 
-/* Contenu principal */
+/* Style du contenu principal */
 main {
-    background-color: #fff; /* Fond blanc pour une meilleure lisibilité */
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    padding: 40px 0;
 }
 
-/* Cartes pour les sections */
-.card {
-    background-color: #ecf0f1;
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style de la section des projets */
+h2 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Couleur sombre pour les titres */
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
     padding: 20px;
-    margin: 15px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Effet de remontée au survol */
+}
+
+.project img {
+    width: 100%;
+    max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
-    color: #2980b9; /* Titre des cartes en bleu */
+.project-details {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
 }
 
-.card p {
-    font-size: 16px;
+.project-details h3 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 1.1rem;
     color: #7f8c8d;
+    margin-bottom: 10px;
 }
 
-/* Boutons */
-button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
+.project-details strong {
+    color: #2c3e50;
 }
 
-button:hover {
-    background-color: #2980b9;
-}
-
-/* Liens */
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Formulaire */
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #2980b9;
-}
-
-/* Footer (pied de page) */
+/* Style du footer */
 footer {
     background-color: #2c3e50;
     color: #fff;
     text-align: center;
-    padding: 15px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 40px;
 }
 
-/* Responsive pour les petits écrans */
+footer p {
+    font-size: 1rem;
+}
+
+/* Effet de transition sur les éléments du footer */
+footer p {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsivité pour les petits écrans */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
+        padding: 0 10px;
     }
 
-    nav a {
-        font-size: 16px;
-        margin: 0 10px;
+    header h1 {
+        font-size: 2.5rem;
     }
 
-    .card {
-        padding: 15px;
+    .project {
+        flex-direction: column;
+        align-items: center;
     }
 
-    form {
-        padding: 15px;
+    .project img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-details {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
-
 
