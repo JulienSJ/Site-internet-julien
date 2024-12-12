@@ -11,40 +11,68 @@
         <h1>Mon Portfolio</h1>
         <nav>
             <ul>
-                <li>Accueil</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <!-- Section d'accueil avec animation -->
+        <section id="accueil" class="intro">
+            <h2>Bienvenue sur mon portfolio</h2>
+            <p>Découvrez mes projets créatifs et professionnels. Mon objectif est de vous inspirer et de vous aider à concrétiser vos idées avec passion et créativité.</p>
+        </section>
+
+        <!-- Section Portfolio avec affichage en grille -->
+        <section id="portfolio">
             <h2>Mes Projets</h2>
             <p>Voici un aperçu des projets passionnants sur lesquels j'ai eu le plaisir de travailler. Chaque projet représente une opportunité de repousser mes limites créatives tout en apportant une valeur ajoutée à mes clients.</p>
 
-            <div class="project">
-                <img src="images/lupiwad_project.jpg" alt="Collaboration avec LupiWay" class="project-image">
-                <div class="project-details">
-                    <h3>Projet 1 : Collaboration avec LupiWay</h3>
-                    <p>Ce projet consistait à développer des campagnes de communication pour des produits innovants dans le domaine de la mode et de la technologie. L'objectif était de toucher un large public en utilisant des approches marketing novatrices et des visuels impactants.</p>
-                    <p><strong>Compétences utilisées :</strong> Stratégie de communication, création de contenu visuel, gestion de projet.</p>
-                    <p><strong>Durée :</strong> 6 mois</p>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="images/lupiwad_project.jpg" alt="Collaboration avec LupiWay" class="project-image">
+                    <div class="project-details">
+                        <h3>Projet 1 : Collaboration avec LupiWay</h3>
+                        <p>Développement de campagnes de communication pour des produits innovants dans le domaine de la mode et de la technologie.</p>
+                        <p><strong>Compétences :</strong> Stratégie, création visuelle, gestion de projet</p>
+                        <p><strong>Durée :</strong> 6 mois</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project">
-                <img src="images/antique_sports.jpg" alt="Promotion des sports antiques" class="project-image">
-                <div class="project-details">
-                    <h3>Projet 2 : Promotion des sports antiques</h3>
-                    <p>Dans ce projet, j'ai créé du contenu pour promouvoir l'histoire des sports antiques romains, en particulier à travers des vidéos, des infographies et des articles éducatifs. Ce projet visait à sensibiliser le public à la richesse culturelle de ces pratiques.</p>
-                    <p><strong>Compétences utilisées :</strong> Création de contenu, rédaction web, storytelling visuel.</p>
-                    <p><strong>Durée :</strong> 4 mois</p>
+                <div class="project">
+                    <img src="images/antique_sports.jpg" alt="Promotion des sports antiques" class="project-image">
+                    <div class="project-details">
+                        <h3>Projet 2 : Promotion des sports antiques</h3>
+                        <p>Création de contenu pour promouvoir l'histoire des sports antiques romains à travers des vidéos et articles éducatifs.</p>
+                        <p><strong>Compétences :</strong> Création de contenu, rédaction web, storytelling</p>
+                        <p><strong>Durée :</strong> 4 mois</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Vous souhaitez collaborer sur un projet ? N'hésitez pas à me contacter.</p>
+        <form action="#" method="post">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer avec icônes sociales -->
     <footer>
         <p>&copy; 2024 Mon Nom | Tous droits réservés</p>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook_icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter_icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+        </div>
     </footer>
 </body>
 </html>
